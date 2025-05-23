@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panti Asuhan Nurul Iman - Peduli Masa Depan Kita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/bg_header.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+
+        .section-divider {
+            width: 100px;
+            height: 4px;
+            background: #3b82f6;
+            margin: 20px auto;
+        }
+
+        .map-link:hover {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <i class="fas fa-home text-blue-500 text-2xl mr-2"></i>
+                            <span class="font-semibold text-gray-900 text-lg">Panti Asuhan Nurul Iman</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#home" class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-medium">Beranda</a>
+                    <a href="#vision" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Visi
+                        & Misi</a>
+                    <a href="#about" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Tentang
+                        Kami</a>
+                    <a href="#contact"
+                        class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Kontak</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="#home"
+                        class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300">Beranda</a>
+                </li>
+                <li><a href="#vision"
+                        class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300">Visi
+                        & Misi</a></li>
+                <li><a href="#about"
+                        class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300">Tentang
+                        Kami</a></li>
+                <li><a href="#contact"
+                        class="block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero flex items-center justify-center text-center text-white">
+        <div class="max-w-4xl px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                Selamat datang di Panti Asuhan Nurul Iman</h1>
+            <p class="text-xl md:text-2xl mb-8">
+                Memberikan kasih sayang, perhatian, dan pendidikan bagi anak-anak yatim piatu</p>
+            <a href="#about"
+                class="inline-block bg-transparent hover:bg-blue-500 hover:text-white text-white font-bold py-3 px-6 border-2 border-white rounded-lg transition duration-300">
+                Pelajari Lebih Lanjut
+            </a>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section id="vision" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Visi & Misi</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-eye text-blue-500 text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Visi Kami</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Menciptakan lingkungan pengasuhan di mana setiap anak yatim piatu dapat tumbuh dengan
+                        bermartabat, menerima
+                        pendidikan yang berkualitas, dan berkembang menjadi anggota masyarakat yang bertanggung jawab
+                        dan produktif.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-bullseye text-blue-500 text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Misi Kami</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Untuk memberikan perawatan yang komprehensif termasuk tempat tinggal, nutrisi, pendidikan,
+                        perawatan kesehatan, dan dukungan emosional kepada anak-anak yatim piatu dan kurang mampu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <img src="assets/img_tentang_kami.webp" alt="Children at Nurul Iman Orphanage"
+                        class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Kisah Kami</h3>
+                    <p class="text-gray-600 mb-4">
+                        Panti Asuhan Nurul Iman didirikan oleh sekelompok orang yang penuh kasih yang menyadari
+                        kebutuhan yang semakin meningkat akan perawatan anak yatim yang berkualitas di masyarakat kita.
+                        Nama kami "Nurul Iman" (Cahaya Iman)
+                        mencerminkan komitmen kami untuk membesarkan anak-anak dengan nilai-nilai moral yang kuat di
+                        samping pendidikan yang sangat baik.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Kami percaya bahwa setiap anak berhak mendapatkan kasih sayang, rasa aman, dan kesempatan untuk
+                        mencapai potensi penuh mereka.
+                        Staf kami yang berdedikasi bekerja tanpa lelah untuk menyediakan lingkungan yang aman dan penuh
+                        kasih sayang bagi anak-anak
+                        yang berada di bawah asuhan kami.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Kontak Kami</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami ingin mendengar pendapat Anda. Hubungi kami untuk
+                    kunjungan atau
+                    kesempatan menjadi sukarelawan.</p>
+            </div>
+
+            <div class="max-w-md mx-auto bg-gray-50 p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">
+                    Hubungi Kami</h3>
+
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-1">Alamat</h4>
+                            <a href="https://www.google.com/maps/place/Panti+Asuhan+Nurul+Iman/@-0.0381527,109.3173459,17z/data=!3m1!4b1!4m6!3m5!1s0x2e1d59033b8f1c75:0xd59b0e4a945370db!8m2!3d-0.0381527!4d109.3199208!16s%2Fg%2F1pzw7_wdm?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D"
+                                target="_blank"
+                                class="text-gray-600 hover:text-blue-500 transition duration-300 map-link">
+                                Jl. Uray Bawadi No.66<br>
+                                Sungai Bangkong, Kec. Pontianak Kota<br>
+                                Kota Pontianak, Kalimantan Barat 78116
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-phone-alt text-blue-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-1">Telepon</h4>
+                            <a href="https://wa.me/08164983872"
+                                class="text-gray-600 hover:text-blue-500 transition duration-300">+62 816 4983 872</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-envelope text-blue-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                            <a href="mailto:info@nuruliman.org"
+                                class="text-gray-600 hover:text-blue-500 transition duration-300">info@nuruliman.org</a>
+                        </div>
+                    </div> -->
+
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-clock text-blue-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-1">Jam Berkunjung</h4>
+                            <p class="text-gray-600">Senin - Sabtu: 9:00 Pagi - 5:00 Sore<br>
+                                Minggu: 10:00 Pagi - 3:00 Sore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="mb-8 text-center">
+                <h3 class="text-xl font-bold mb-4">Panti Asuhan Nurul Iman</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">Memberikan kasih sayang, perhatian, dan pendidikan bagi
+                    anak-anak yatim piatu.
+                </p>
+            </div>
+            <div class="border-t border-gray-800 pt-6 text-center">
+                <p class="text-gray-400 text-sm">© 2025 Panti Asuhan Nurul Iman. Semua hak cipta dilindungi
+                    undang-undang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="fixed bottom-6 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-blue-600">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>
